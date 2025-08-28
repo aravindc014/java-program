@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            if (!Character.isLetterOrDigit(s.charAt(i)) 
+                && !Character.isWhitespace(s.charAt(i))){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
